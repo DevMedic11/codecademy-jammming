@@ -1,82 +1,57 @@
 #root {
-  max-width: 1280px;
+  //border: 2px white dotted;
+  width: 100vw;
+  height:100vh;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.App {
+  background-image: url(./assets/crowd.jpg);
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header-container{
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-container h1 {
+  //border: 1px red solid;
+  margin: .5rem 0 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header-container span {
+  color: #1DB954;
 }
 
-.card {
-  padding: 2em;
+.results-playlist-container {
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  //border: 2px white solid;
+  width: 80vw;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+.results-container, .playlist-container {
+  background-color: rgba(0, 0, 0, .6);
+  border: 2px black solid;
+  border-radius: .75rem;
+  min-width: 39vw;
+  min-height: 21vh;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: .5rem;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.results-playlist-container .header {
+  padding-bottom: .25rem;
+  border-bottom: 1px white solid;
 }

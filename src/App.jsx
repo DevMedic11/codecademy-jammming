@@ -53,10 +53,29 @@ getToken(api)
   });
 
   return (
-    <div className="App">
-      <h1>Lets test fetch</h1>
-      
-    </div>
+    <>
+    <main className="App">
+    <header className="header-container">
+    <h1>Ja<span>mmm</span>ing</h1>
+    </header>
+ {/*Tracklist Track*/}
+      <section>
+        <input type="text" defaultValue="Artist, Song, Genre, etc." />
+        <br/>
+        <button>Search</button>
+      </section>
+
+      <section className="results-playlist-container"> 
+        <article className="results-container">
+          <h2 className="header">Results</h2>
+        </article>
+        <article className="playlist-container">
+          <h2 className="header">Playlists</h2>
+        </article>
+      </section>
+
+    </main>
+    </>
   );
 }
 

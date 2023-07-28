@@ -21,7 +21,7 @@ function App() {
     <>
     <main className="App">
       <Header />
-      <Search />
+      <Search accessToken={token} />
       <SearchResults />
       </main>
     </>

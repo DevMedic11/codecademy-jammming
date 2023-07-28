@@ -34,6 +34,23 @@ async function getTracks(){
   return response.json();
 };
 
+export async function searchData(searchValue, accessToken){
+  let endpoint= `https://api.spotify.com/v1/search?q=${searchValue}&type=track%2Cartist%2Calbum&market=US&limit=15&include_external=audio`;
+  const response= await fetch(endpoint, {
+    method: "GET",
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+    }
+  })
+  if (!response.ok){
+    throw new Error('Error: ' + response.status);
+  }
+  return response.json();
+  }
+  /*
+  --url 'https://api.spotify.com/v1/search?q=remaster%2520track%3ADoxy%2520artist%3AMiles%2520Davis&type=track%2Cartist%2Calbum&market=US&limit=15&include_external=audio' \
+ 
+  TODO: q= needs to redirects to search value in search box */
 
 
 
